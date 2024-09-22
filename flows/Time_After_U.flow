@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <decisions>
+        <name>Category</name>
+        <label>Category</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Project_Budget</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Project Budget</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Budget_Rollup</targetReference>
+            </connector>
+            <label>Project Budget</label>
+        </rules>
+        <rules>
+            <name>Project_Role</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Project Role</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Role_Rollup</targetReference>
+            </connector>
+            <label>Project Role</label>
+        </rules>
+        <rules>
+            <name>Project_Resource</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Project Resource</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Resource_Rollup</targetReference>
+            </connector>
+            <label>Project Resource</label>
+        </rules>
+        <rules>
+            <name>Project_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Project Task</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Task_Rollup</targetReference>
+            </connector>
+            <label>Project Task</label>
+        </rules>
+    </decisions>
+    <description>Updates corresponding Rollup record.</description>
+    <environments>Default</environments>
+    <interviewLabel>Time - After U {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Time - After U</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Project_Budget_Rollup</name>
+        <label>Project Budget Rollup</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Budget_hrs__c</field>
+            <value>
+                <elementReference>$Record.Budget_hrs__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Project_Budget_Rollups__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Resource_Rollup</name>
+        <label>Project Resource Rollup</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Planned_hrs__c</field>
+            <value>
+                <elementReference>$Record.Planned_hrs__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Project_Resource_Rollups__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Role_Rollup</name>
+        <label>Project Role Rollup</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Planned_hrs__c</field>
+            <value>
+                <elementReference>$Record.Planned_hrs__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Project_Role_Rollups__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Task_Rollup</name>
+        <label>Project Task Rollup</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Planned_hrs__c</field>
+            <value>
+                <elementReference>$Record.Planned_hrs__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Project_Task_Rollups__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Category</targetReference>
+        </connector>
+        <object>Time__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

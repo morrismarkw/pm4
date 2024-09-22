@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Resource_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Resource_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Resource_Layout</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Resource</label>
+    <nameField>
+        <label>Resource</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Resources</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <searchResultsAdditionalFields>Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Default_Available_FTE_weekday__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Default_Target_FTE_weekday__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>Resource_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Active__c</fields>
+        <fields>Role__c</fields>
+        <fields>Default_Available_FTE_weekday__c</fields>
+        <fields>Default_Target_FTE_weekday__c</fields>
+        <label>Resource Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <label>Role</label>
+        <referenceTo>Role__c</referenceTo>
+        <relationshipLabel>Resources</relationshipLabel>
+        <relationshipName>Resources</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Resources</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <label>Active</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bypass_Validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Validation</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Planning_Start_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <inlineHelpText>The date that planning was begun for this Resource.</inlineHelpText>
+        <label>Planning Start Date</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Planning_Horizon_days__c</fullName>
+        <defaultValue>30</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the number of days into the future for which the system will automatically generate Available and Target time records. The default is set to 60 days (minimum is 30 and maximum is 90). Users can adjust this horizon to extend or shorten the planning period as needed. Generated records can be modified manually to fine-tune capacity planning.</inlineHelpText>
+        <label>Planning Horizon (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_User_is_Resource__c</fullName>
+        <formula>$User.Id ==  User__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current User is Resource</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Planning_Horizon_End_Date__c</fullName>
+        <formula>TODAY() + Planning_Horizon_days__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planning Horizon End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Default_Target_FTE_weekday__c</fullName>
+        <formula>Default_Available_FTE_weekday__c *  Default_Target_Available_weekday__c 
+/* Utilization Target (%FTE) = Available (%FTE) * Target Percentage (%Available) */</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The calculated target of a resource as a percentage of full-time equivalent (FTE/weekday). It is derived from multiplying the Default Available (FTE/weekday) by the Default Target (%Available/weekday). This value is directly used to generate actual Target (FTE/Weekday) . For instance, if Default Available is 50% FTE/weekday and Default Target is 80%, the actual Target is 40% FTE/weekday.</inlineHelpText>
+        <label>Default Target (FTE/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Default_Target_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Default_Target_FTE_weekday__c * 8</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Default Target (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Available_FTE_weekday__c</fullName>
+        <defaultValue>1</defaultValue>
+        <inlineHelpText>Specifies the default percentage of full-time equivalent (FTE) availability for resources. This value represents the proportion of an 8-hour standard workday (e.g., 100% FTE is 8 hours per day). It serves as the baseline input for calculating the Target (%FTE/weekday).</inlineHelpText>
+        <label>Default Available (FTE/weekday)</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Default_Available_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Default_Available_FTE_weekday__c  * 8</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Default Available (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Target_Available_weekday__c</fullName>
+        <defaultValue>0.75</defaultValue>
+        <inlineHelpText>Represents the default target percentage of a resource&apos;s available time that should be allocated to productive or billable work. This value is used in conjunction with Default Available (%FTE/weekday) to determine the Target (%FTE/weekday). For example, if a resource is available at 50% FTE and the target utilization is 80%, this means the goal is to use 80% of that available 50% FTE for work.</inlineHelpText>
+        <label>Default Target (%Available/weekday)</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Role__c</columns>
+        <columns>Default_Available_FTE_weekday__c</columns>
+        <columns>Default_Target_Available_weekday__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Resource</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Role__c</columns>
+        <columns>Default_Available_FTE_weekday__c</columns>
+        <columns>Default_Target_Available_weekday__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Current_User_is_Resource__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Resource</label>
+    </listViews>
+    <validationRules>
+        <fullName>User_is_required</fullName>
+        <active>true</active>
+        <description>The User lookup can not be made required, thus a validation rule is needed.</description>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISBLANK( User__c )
+)</errorConditionFormula>
+        <errorDisplayField>User__c</errorDisplayField>
+        <errorMessage>User is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>User_can_not_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     !ISNEW() &amp;&amp;  ISCHANGED( User__c ) 
+)
+/* User is required when the record is created, but it can not be updated */</errorConditionFormula>
+        <errorMessage>User can not be changed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Default_Target_Utilization_FTE_must_b</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+      Default_Target_FTE_weekday__c &lt; 0 ||  Default_Target_FTE_weekday__c &gt; 100
+)</errorConditionFormula>
+        <errorMessage>Default Target Utilization (%FTE) must be from 0% to 100%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Default_Target_Utilization_Total_must</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+      Default_Target_Available_weekday__c  &lt; 0 ||  Default_Target_Available_weekday__c &gt; 100
+)</errorConditionFormula>
+        <errorMessage>Default Target Utilization (%Total) must be from 0% to 100%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Default_Total_Time_FTE_must_be_from_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+      Default_Available_FTE_weekday__c  &lt; 0 ||  Default_Available_FTE_weekday__c &gt; 100
+)</errorConditionFormula>
+        <errorMessage>Default Total Time (%FTE) must be from 0% to 100%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Planning_Start_Date_can_not_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Planning_Start_Date__c) &amp;&amp;
+     !ISNEW()
+)</errorConditionFormula>
+        <errorMessage>Planning Start Date can not be changed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Planning_Start_Date_must_be_greater_than</fullName>
+        <active>true</active>
+        <description>Planning Start Date must be greater than or equal to today.</description>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     Planning_Start_Date__c &lt; TODAY() &amp;&amp;
+     ISNEW()
+)</errorConditionFormula>
+        <errorMessage>Planning Start Date must be greater than or equal to today.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Resource_Planning_Horizon_must_be_from_3</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     Planning_Horizon_days__c &gt; 90 || Planning_Horizon_days__c &lt; 30
+)</errorConditionFormula>
+        <errorMessage>Resource Planning Horizon must be from 30 to 90 days.</errorMessage>
+    </validationRules>
+</CustomObject>

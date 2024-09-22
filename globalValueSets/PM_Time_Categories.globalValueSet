@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Resource</fullName>
+        <default>false</default>
+        <label>Resource</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Budget</fullName>
+        <default>false</default>
+        <label>Project Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Role</fullName>
+        <default>false</default>
+        <label>Project Role</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Resource</fullName>
+        <default>false</default>
+        <label>Project Resource</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Task</fullName>
+        <default>false</default>
+        <label>Project Task</label>
+    </customValue>
+    <masterLabel>PM Time Categories</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

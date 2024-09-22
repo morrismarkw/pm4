@@ -1,0 +1,73 @@
+<template>
+    <div class="slds-box slds-theme_default slds-p-around_medium">
+        <template if:true={showTypePicklist}>
+            <div class="slds-m-bottom_medium">
+                <lightning-combobox 
+                    label="Type"
+                    value={selectedType}
+                    options={optionType}
+                    placeholder="Select a Type"
+                    onchange={handleTypeChange}
+                    style="width: 300px;">
+                </lightning-combobox>
+            </div>
+        </template>
+
+        <div class="slds-m-bottom_medium">
+            <lightning-combobox 
+                label={labelLineItem}
+                value={selectedLineItem}
+                options={optionsLineItem}
+                placeholder="None"
+                onchange={handleLineItemChange}
+                disabled={isLineItemDisabled}
+                style="width: 300px;">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-m-bottom_medium">
+            <lightning-combobox 
+                label="Date Filter"
+                value={selectedTimeFilter}
+                options={timeFilterOptions}
+                placeholder="Select Date Filter"
+                onchange={handleTimeFilterChange}
+                disabled={isTimeFilterDisabled}
+                style="width: 300px;">
+            </lightning-combobox>
+        </div>
+
+        <template if:true={showDatatable}>
+            <!-- Row and Hour Summary -->
+            <div class="slds-m-bottom_medium">
+                <p>{rowSummary} | {hourSummary}</p>
+            </div>
+
+            <!-- Datatable -->
+            <lightning-datatable 
+                key-field="Id"
+                data={timeRecords}
+                columns={columns}
+                sorted-by={sortedBy}
+                sorted-direction={sortedDirection}
+                onsort={handleSort}
+                onrowselection={handleRowSelection}
+                draft-values={draftValues}
+                class="slds-m-top_medium">
+            </lightning-datatable>
+        </template>
+
+        <template if:false={showDatatable}>
+            <div class="slds-m-top_medium slds-text-align_center">
+                <p>{noRecordsMessage}</p>
+            </div>
+        </template>
+
+        <!-- Debug Information -->
+        <div class="slds-m-top_medium slds-text-align_center">
+            <pre>
+                {debug}
+            </pre>
+        </div>
+    </div>
+</template>
