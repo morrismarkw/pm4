@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Time_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Time_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Time_Layout</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Time</label>
+    <nameField>
+        <displayFormat>TME-{00000000}</displayFormat>
+        <label>Time</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Times</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Display_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Weekday_Indicator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Hours__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>Time_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Type__c</fields>
+        <fields>Category__c</fields>
+        <fields>Display_Date__c</fields>
+        <fields>Hours__c</fields>
+        <fields>Weekday_Indicator__c</fields>
+        <label>Time Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(DAY(Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTE__c</fullName>
+        <formula>Hours__c / 2080</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FTE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Key</label>
+        <length>255</length>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <label>Date</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Role</label>
+        <referenceTo>Role__c</referenceTo>
+        <relationshipLabel>Times</relationshipLabel>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <label>Type</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PM_Time_Types</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Week__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  CEILING((Date__c - DATE(YEAR(Date__c), 1, 1) + 1) / 7) &gt; 52,
+  52,
+  CEILING((Date__c - DATE(YEAR(Date__c), 1, 1) + 1) / 7)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Week</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Year</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    Type__c,
+    &quot;Budget&quot;, Budget_hrs__c,
+    &quot;Available&quot;, Available_hrs__c,
+    &quot;Target&quot;, Planned_hrs__c, /* Assuming Target is similar to Planned__c, you can update this as needed */
+    &quot;Planned&quot;, Planned_hrs__c,
+    &quot;Billable&quot;, Billable_hrs__c,
+    &quot;Non-Billable&quot;, Non_Billable_hrs__c,
+    NULL 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+  MONTH(Date__c), 
+  1, &quot;January&quot;, 
+  2, &quot;February&quot;, 
+  3, &quot;March&quot;, 
+  4, &quot;April&quot;, 
+  5, &quot;May&quot;, 
+  6, &quot;June&quot;, 
+  7, &quot;July&quot;, 
+  8, &quot;August&quot;, 
+  9, &quot;September&quot;, 
+  10, &quot;October&quot;, 
+  11, &quot;November&quot;, 
+  12, &quot;December&quot;, 
+  &quot;Error&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Past__c</fullName>
+        <formula>Date__c &lt; TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Past</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Role__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Role ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+  WEEKDAY(Date__c), 
+  1, &quot;Sunday&quot;, 
+  2, &quot;Monday&quot;, 
+  3, &quot;Tuesday&quot;, 
+  4, &quot;Wednesday&quot;, 
+  5, &quot;Thursday&quot;, 
+  6, &quot;Friday&quot;, 
+  7, &quot;Saturday&quot;, 
+  &quot;Error&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weekday</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <label>Category</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PM_Time_Categories</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_Today__c</fullName>
+        <formula>Date__c == TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Today</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Resource</label>
+        <referenceTo>Resource__c</referenceTo>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Future__c</fullName>
+        <formula>Date__c &gt; TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Future</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Budget_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Weekday__c</fullName>
+        <formula>!(WEEKDAY(Date__c) == 1 || WEEKDAY(Date__c) == 7)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Weekday</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Target (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resource_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Resource__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Resource ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Weekday__c &amp; &quot;, &quot; &amp; Month__c &amp; &quot; &quot; &amp; Day__c &amp; &quot;, &quot; &amp; Year__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Display Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Last_Week__c</fullName>
+        <formula>WEEKDAY(Date__c) &gt;= 1 &amp;&amp; WEEKDAY(Date__c) &lt;= 7 &amp;&amp; Date__c &lt; TODAY() &amp;&amp; Date__c &gt;= (TODAY() - (7 - WEEKDAY(TODAY()) + 1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Last Week</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Next_Week__c</fullName>
+        <formula>Date__c &gt; TODAY() &amp;&amp; Date__c &lt;= (TODAY() + 7)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Next Week</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_This_Week__c</fullName>
+        <formula>Date__c &gt;= (TODAY() - WEEKDAY(TODAY()) + 1) &amp;&amp; Date__c &lt; (TODAY() + (8 - WEEKDAY(TODAY())))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is This Week</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_This_Year__c</fullName>
+        <formula>YEAR(Date__c) = YEAR(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is This Year</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Project Role</label>
+        <referenceTo>Project_Role__c</referenceTo>
+        <relationshipLabel>Times</relationshipLabel>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Task__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Project Task</label>
+        <referenceTo>Project_Task__c</referenceTo>
+        <relationshipLabel>Times</relationshipLabel>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Available_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Available (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Last_Month__c</fullName>
+        <formula>MONTH(Date__c) = MONTH(TODAY()) - 1 &amp;&amp; YEAR(Date__c) = YEAR(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Last Month</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Next_Month__c</fullName>
+        <formula>MONTH(Date__c) = MONTH(TODAY()) + 1 &amp;&amp; YEAR(Date__c) = YEAR(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Next Month</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_This_Month__c</fullName>
+        <formula>MONTH(Date__c) = MONTH(TODAY()) &amp;&amp; YEAR(Date__c) = YEAR(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is This Month</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_Budget__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Project Budget</label>
+        <referenceTo>Project_Budget__c</referenceTo>
+        <relationshipLabel>Times</relationshipLabel>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Non_Billable_hrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Non-Billable (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Project Resource</label>
+        <referenceTo>Project_Resource__c</referenceTo>
+        <relationshipLabel>Times</relationshipLabel>
+        <relationshipName>Times</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Today_and_Future__c</fullName>
+        <formula>Is_Today__c || Is_Future__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Today and Future</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bypass_Validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Validation</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Weekday_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  OR(
+    WEEKDAY(Date__c) = 1,  
+    WEEKDAY(Date__c) = 7   
+  ),
+  IMAGE(&quot;/resource/pm_images/path_light_gray.png&quot;, &quot;Weekend&quot;, 16, 64),  
+  IMAGE(&quot;/resource/pm_images/path_dark_purple.png&quot;, &quot;Weekday&quot;, 16, 64)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weekday Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Formatted_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(Date__c)) &amp; &quot;-&quot; &amp; 
+LPAD(TEXT(MONTH(Date__c)), 2, &quot;0&quot;) &amp; &quot;-&quot; &amp; 
+LPAD(TEXT(DAY(Date__c)), 2, &quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Formatted Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Future_and_Today__c</fullName>
+        <formula>Date__c &gt;= TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Future and Today</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Budget_vs_Planned_hrs__c</fullName>
+        <externalId>false</externalId>
+        <formula>Budget_hrs__c - Planned_hrs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This measures the variance between budgeted hours and planned hours, offering insight into whether planned work aligns with the allocated budget. A positive result indicates underutilization of the budget, while a negative result suggests the plan exceeds the budget.</inlineHelpText>
+        <label>Budget vs Planned (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_vs_Billable_hrs__c</fullName>
+        <description>This compares the target billable hours with the actual billable hours, showing whether your team is meeting its billing goals. A positive number indicates that billing is falling short of targets, while a negative value suggests billing is exceeding expectations.</description>
+        <externalId>false</externalId>
+        <formula>Target_hrs__c - Billable_hrs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target vs Billable (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_vs_Billable_hrs__c</fullName>
+        <description>This tracks how much of the planned hours have translated into billable time. A positive value shows a gap between planned work and billable time, while a negative value indicates more billable hours than originally planned.</description>
+        <externalId>false</externalId>
+        <formula>Planned_hrs__c - Billable_hrs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned vs Billable (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_User_is_Resource__c</fullName>
+        <formula>$User.Id == Resource__r.User__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current User is Resource</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Planned_vs_Available_hrs__c</fullName>
+        <description>This shows the difference between planned hours and available hours, indicating whether resources are overbooked (positive result) or underutilized (negative result).</description>
+        <externalId>false</externalId>
+        <formula>Planned_hrs__c - Available_hrs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned vs Available (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_vs_Non_Billable_hrs__c</fullName>
+        <description>Description: This highlights how many of the planned hours have been spent on non-billable tasks. A positive result indicates an efficient use of planned time, while a negative value suggests non-billable tasks have consumed more time than planned.</description>
+        <externalId>false</externalId>
+        <formula>Planned_hrs__c - Non_Billable_hrs__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned vs Non-Billable (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Only_the_hours_field_matching_the_select</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+    ISCHANGED(Date__c) || 
+    ISCHANGED(Type__c) || 
+    ISCHANGED(Project__c) || 
+    ISCHANGED(Project_Budget__c) || 
+    ISCHANGED(Project_Resource__c) || 
+    ISCHANGED(Project_Task__c) || 
+    ISCHANGED(Project_Role__c) || 
+    ISCHANGED(Resource__c) || 
+    ISCHANGED(Role__c)
+)</errorConditionFormula>
+        <errorMessage>Only the hours field matching the selected type can be changed. All other fields are not editable.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Only_the_relevant_field_may_be_populated</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+    /* If Type is Budget, ensure only Budget_hrs__c is populated */
+    (ISPICKVAL(Type__c, &quot;Budget&quot;) &amp;&amp; 
+        (NOT(ISNULL(Available_hrs__c)) || NOT(ISNULL(Billable_hrs__c)) || NOT(ISNULL(Non_Billable_hrs__c)) || NOT(ISNULL(Planned_hrs__c)))
+    ) ||
+    /* If Type is Available, ensure only Available_hrs__c is populated */
+    (ISPICKVAL(Type__c, &quot;Available&quot;) &amp;&amp; 
+        (NOT(ISNULL(Budget_hrs__c)) || NOT(ISNULL(Billable_hrs__c)) || NOT(ISNULL(Non_Billable_hrs__c)) || NOT(ISNULL(Planned_hrs__c)))
+    ) ||
+    /* If Type is Planned, ensure only Planned__c is populated */
+    (ISPICKVAL(Type__c, &quot;Planned&quot;) &amp;&amp; 
+        (NOT(ISNULL(Available_hrs__c)) || NOT(ISNULL(Billable_hrs__c)) || NOT(ISNULL(Non_Billable_hrs__c)) || NOT(ISNULL(Budget_hrs__c)))
+    ) ||
+    /* If Type is Billable, ensure only Billable_hrs__c is populated */
+    (ISPICKVAL(Type__c, &quot;Billable&quot;) &amp;&amp; 
+        (NOT(ISNULL(Available_hrs__c)) || NOT(ISNULL(Budget_hrs__c)) || NOT(ISNULL(Non_Billable_hrs__c)) || NOT(ISNULL(Planned_hrs__c)))
+    ) ||
+    /* If Type is Non-Billable, ensure only Non_Billable__c is populated */
+    (ISPICKVAL(Type__c, &quot;Non-Billable&quot;) &amp;&amp; 
+        (NOT(ISNULL(Available_hrs__c)) || NOT(ISNULL(Budget_hrs__c)) || NOT(ISNULL(Billable_hrs__c)) || NOT(ISNULL(Planned_hrs__c)))
+    )
+)</errorConditionFormula>
+        <errorMessage>Only the relevant field may be populated based on the selected Type.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>You_can_only_update_the_hours_field_that</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+    ISCHANGED(Target_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Target&quot;)) ||
+    ISCHANGED(Available_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Available&quot;)) ||
+    ISCHANGED(Billable_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Billable&quot;)) ||
+    ISCHANGED(Budget_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Budget&quot;)) ||
+    ISCHANGED(Non_Billable_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Non-Billable&quot;)) ||
+    ISCHANGED(Planned_hrs__c) &amp;&amp; NOT(ISPICKVAL(Type__c, &quot;Planned&quot;))
+)</errorConditionFormula>
+        <errorMessage>You can only update the hours field that matches the selected type.</errorMessage>
+    </validationRules>
+</CustomObject>

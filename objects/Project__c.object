@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Project</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Project</label>
+    <nameField>
+        <label>Project</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <massQuickActions>New_Budget</massQuickActions>
+        <searchResultsAdditionalFields>Protocol__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Stage_Indicator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status_Indicator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Utilized_hrs__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Remaining_hrs__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>Project</fullName>
+        <fields>Name</fields>
+        <fields>Protocol__c</fields>
+        <fields>Start_Date__c</fields>
+        <fields>End_Date__c</fields>
+        <fields>Budget_hrs__c</fields>
+        <fields>Utilized_hrs_rollup__c</fields>
+        <fields>Remaining_hrs__c</fields>
+        <fields>Remaining_Duration_weekdays__c</fields>
+        <label>Project</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <label>Stage</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                    <label>Canceled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Budget__c</fullName>
+        <label>Budget ($)</label>
+        <summarizedField>Project_Budget__c.Selected_Budget__c</summarizedField>
+        <summaryForeignKey>Project_Budget__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>true</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                    <label>Yellow</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field links to the Account associated with the project.</description>
+        <inlineHelpText>This field links to the Account associated with the project.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Projects</relationshipLabel>
+        <relationshipName>Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <defaultValue>today()+14</defaultValue>
+        <label>End Date</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Protocol__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Protocol</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Utilized__c</fullName>
+        <formula>Utilized_hrs_rollup__c *  Budget_hr__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Utilized ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Budget_hr__c</fullName>
+        <formula>IF(Budget_hrs__c != 0, Budget__c / Budget_hrs__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Budget ($/hr)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Remaining__c</fullName>
+        <formula>Budget__c -  Utilized__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Budget_FTE__c</fullName>
+        <formula>Budget_hrs__c / 2080</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Budget (FTE)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Budget_hrs__c</fullName>
+        <label>Budget (hrs)</label>
+        <summarizedField>Project_Budget__c.Selected_Budget_hrs__c</summarizedField>
+        <summaryForeignKey>Project_Budget__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Indicators__c</fullName>
+        <externalId>false</externalId>
+        <formula>Stage_Indicator__c  &amp; &quot;&quot; &amp; BR() &amp; 
+Status_Indicator__c &amp; &quot;&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Indicators</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Stage_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(TEXT(Stage__c), 
+     &quot;New&quot;, 0, 
+     &quot;Planning&quot;, 1,
+     &quot;In Progress&quot;, 2,
+     &quot;Completed&quot;, 3,
+     &quot;Canceled&quot;, 4,
+     999
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Utilized_hrs__c</fullName>
+        <externalId>false</externalId>
+        <formula>Utilized_hrs_rollup__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Utilized (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_hrs__c</fullName>
+        <externalId>false</externalId>
+        <formula>Budget_hrs__c - Utilized_hrs_rollup__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+    TEXT(Stage__c),
+    &quot;New&quot;, 
+        IMAGE(&quot;/resource/pm_images/path_dark_purple.png&quot;, &quot;New&quot;, 16, 16) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_light_gray.png&quot;, &quot;Planning, In Progress, Complete&quot;, 16, 48),
+    &quot;Planning&quot;, 
+        IMAGE(&quot;/resource/pm_images/path_light_purple.png&quot;, &quot;New&quot;, 16, 16) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_dark_purple.png&quot;, &quot;Planning&quot;, 16, 16) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_light_gray.png&quot;, &quot;In Progress, Complete&quot;, 16, 32),
+    &quot;In Progress&quot;, 
+        IMAGE(&quot;/resource/pm_images/path_light_purple.png&quot;, &quot;New, Planning&quot;, 16, 32) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_dark_purple.png&quot;, &quot;In Progress&quot;, 16, 16) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_light_gray.png&quot;, &quot;Complete&quot;, 16, 16),
+    &quot;Completed&quot;, 
+        IMAGE(&quot;/resource/pm_images/path_light_purple.png&quot;, &quot;New, Planning, In Progress&quot;, 16, 48) &amp; 
+        IMAGE(&quot;/resource/pm_images/path_dark_purple.png&quot;, &quot;Completed&quot;, 16, 16),
+    &quot;Canceled&quot;, 
+        IMAGE(&quot;/resource/pm_images/path_canceled.png&quot;, &quot;Canceled&quot;, 16, 64),
+    &quot;Error&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    TEXT(Stage__c) = &quot;Canceled&quot;,
+    IMAGE(&quot;/resource/pm_images/path_canceled.png&quot;, &quot;Canceled&quot;, 16, 64),
+    CASE(
+        TEXT(Status__c),
+        &quot;Green&quot;, IMAGE(&quot;/resource/pm_images/color_green.png&quot;, &quot;Green&quot;, 16, 64),
+        &quot;Yellow&quot;, IMAGE(&quot;/resource/pm_images/color_yellow.png&quot;, &quot;Yellow&quot;, 16, 64),
+        &quot;Red&quot;, IMAGE(&quot;/resource/pm_images/color_red.png&quot;, &quot;Red&quot;, 16, 64),
+        &quot;Error&quot;
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Indicator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bypass_Validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Validation</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Duration_weekdays__c</fullName>
+        <externalId>false</externalId>
+        <formula>(5 * (FLOOR(((End_Date__c + 1) - DATE(1900, 1, 8)) / 7)) + MIN(5, MOD((End_Date__c + 1) - DATE(1900, 1, 8), 7)))
+-
+(5 * (FLOOR((Start_Date__c - DATE(1900, 1, 8)) / 7)) + MIN(5, MOD(Start_Date__c - DATE(1900, 1, 8), 7)))
+/* 
+/* Full Weeks Calculation *//*
+(5 * FLOOR((End_Date__c - Start_Date__c) / 7)) 
++
+/* Remaining Days Calculation *//*
+CASE(
+    WEEKDAY(Start_Date__c),
+    5, MAX(0, MOD(End_Date__c - Start_Date__c, 7) - 2), /* First two days are weekend (Friday start) *//*
+    6, MIN(5, MAX(0, MOD(End_Date__c - Start_Date__c, 7) - 1)), /* First and last day are weekend (Saturday start) *//*
+    /* Default: Handle normal weekdays (Monday to Thursday) *//*
+    MIN(5, MAX(0, MOD(End_Date__c - Start_Date__c, 7)))
+)
++
+/* Add 1 if End Date is a weekday (Monday to Friday) *//*
+IF(
+    WEEKDAY(End_Date__c) &gt;= 2 &amp;&amp; WEEKDAY(End_Date__c) &lt;= 6, 
+    1, 
+    0
+)
+
+*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration (weekdays)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Roles_hrs__c</fullName>
+        <label>Planned Roles (hrs)</label>
+        <summarizedField>Project_Role__c.Planned_hrs__c</summarizedField>
+        <summaryForeignKey>Project_Role__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Tasks_hrs__c</fullName>
+        <label>Planned Tasks (hrs)</label>
+        <summarizedField>Project_Task__c.Planned_hrs__c</summarizedField>
+        <summaryForeignKey>Project_Task__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Budget_FTE_weekday__c</fullName>
+        <formula>100 * Budget_hrs_weekday__c / 2080</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Budget (FTE/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Budget_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Budget_hrs__c /  Duration_weekdays__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Budget (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Effective_Rate_phr__c</fullName>
+        <formula>IF (Utilized_hrs_rollup__c != 0, Budget__c /  Utilized_hrs_rollup__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Effective Rate ($/hr)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Utilized_hrs_rollup__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Utilized (hrs) rollup</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Resources_hrs__c</fullName>
+        <label>Planned Resources (hrs)</label>
+        <summarizedField>Project_Resource__c.Planned_hrs__c</summarizedField>
+        <summaryForeignKey>Project_Resource__c.Project__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Roles_FTE_weekday__c</fullName>
+        <formula>Planned_Roles_hrs_weekday__c / 8</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Roles (FTE/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Roles_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Planned_Roles_hrs__c /  Duration_weekdays__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Roles (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Tasks_FTE_weekday__c</fullName>
+        <formula>Planned_Tasks_hrs_weekday__c / 8</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Tasks (FTE/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Tasks_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Planned_Tasks_hrs__c / Duration_weekdays__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Tasks (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Duration_weekdays__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+    TODAY() &lt; Start_Date__c,
+    Duration_weekdays__c,  /* Return total duration if current date is before start date */
+    IF(
+        TODAY() &gt; End_Date__c,
+        0,  /* Return 0 if current date is after the end date */
+        /* Calculate business days between TODAY() and End_Date__c */
+        (5 * FLOOR((End_Date__c - TODAY()) / 7)) +
+        MIN(5, MOD(End_Date__c - TODAY(), 7) +
+        CASE(
+            WEEKDAY(TODAY()),
+            1, 0,  /* Sunday */
+            7, -1, /* Saturday */
+            0      /* Default */
+        )) + 1
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Duration (weekdays)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Resources_FTE_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Planned_Resources_hrs_weekday__c / 8</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Resources (FTE/weekday))</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Resources_hrs_weekday__c</fullName>
+        <externalId>false</externalId>
+        <formula>Planned_Resources_hrs__c /  Duration_weekdays__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Planned Resources (hrs/weekday)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_New</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>All New</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Canceled</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>All Canceled</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Planning</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>Planning</value>
+        </filters>
+        <label>All Planning</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Completed</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>All Completed</label>
+    </listViews>
+    <listViews>
+        <fullName>All_In_Progress</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <label>All In Progress</label>
+    </listViews>
+    <listViews>
+        <fullName>All_In_Progress_Red</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Red</value>
+        </filters>
+        <label>All In Progress, Red</label>
+    </listViews>
+    <listViews>
+        <fullName>All_In_Progress_Green</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Green</value>
+        </filters>
+        <label>All In Progress, Green</label>
+    </listViews>
+    <listViews>
+        <fullName>All_In_Progress_Yellow</fullName>
+        <columns>NAME</columns>
+        <columns>Protocol__c</columns>
+        <columns>Stage_Indicator__c</columns>
+        <columns>Status_Indicator__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>Utilized_hrs__c</columns>
+        <columns>Remaining_hrs__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Yellow</value>
+        </filters>
+        <label>All In Progress, Yellow</label>
+    </listViews>
+    <validationRules>
+        <fullName>Stage_must_always_move_forward</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Stage__c) &amp;&amp; 
+     Stage_Number__c &lt; PRIORVALUE( Stage_Number__c )
+)</errorConditionFormula>
+        <errorMessage>Stage must always move forward.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_must_be_after_the_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(End_Date__c) &amp;&amp;
+     End_Date__c &lt;= Start_Date__c
+)</errorConditionFormula>
+        <errorMessage>End Date must be after the Start Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_Date_can_not_be_set_to_the_past</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Start_Date__c) &amp;&amp;
+     Start_Date__c &lt; TODAY()
+)</errorConditionFormula>
+        <errorMessage>Start Date can not be set to the past.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_Date_must_be_before_the_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Start_Date__c) &amp;&amp;
+     Start_Date__c &gt;= End_Date__c
+)</errorConditionFormula>
+        <errorMessage>Start Date must be before the End Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Budget_must_be_allocated_to_the_Project</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Stage__c) &amp;&amp; 
+     ISPICKVAL(Stage__c,&quot;In Progress&quot;) &amp;&amp;
+     Budget__c &lt;= 0
+)</errorConditionFormula>
+        <errorMessage>Budget must be allocated to the Project before it can be moved to In Progress.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_can_not_be_changed_once_the_Sta</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(End_Date__c) &amp;&amp; 
+     PRIORVALUE(Stage_Number__c)&gt; 2
+)</errorConditionFormula>
+        <errorMessage>End Date can not be changed once the Stage is moved to Completed or Canceled.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_must_be_less_than_Start_Date_pl</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+    End_Date__c &gt; DATE(
+        YEAR(Start_Date__c) + 1,
+        MONTH(Start_Date__c),
+        DAY(Start_Date__c)
+    )
+)</errorConditionFormula>
+        <errorMessage>End Date must be less than Start Date plus one year.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_must_be_set_to_today_before_mov</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Stage__c) &amp;&amp; (
+          ISPICKVAL(Stage__c,&quot;Completed&quot;) || 
+          ISPICKVAL(Stage__c,&quot;Canceled&quot;)
+     ) &amp;&amp; 
+     End_Date__c != TODAY()
+)</errorConditionFormula>
+        <errorMessage>End Date must be set to today before moving the Stage to Completed or Canceled.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_Date_can_not_be_changed_once_the_S</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Start_Date__c) &amp;&amp; 
+      PRIORVALUE(Stage_Number__c) &gt; 1
+)</errorConditionFormula>
+        <errorMessage>Start Date can not be changed once the Stage is moved to In Progress.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_Date_must_be_set_to_today_before_m</fullName>
+        <active>true</active>
+        <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
+     ISCHANGED(Stage__c) &amp;&amp; 
+     ISPICKVAL(Stage__c,&quot;In Progress&quot;) &amp;&amp; 
+     Start_Date__c != TODAY() 
+)</errorConditionFormula>
+        <errorMessage>Start Date must be set to today before moving the Stage to In Progress.</errorMessage>
+    </validationRules>
+</CustomObject>
