@@ -162,7 +162,7 @@
     <label>Project Budget</label>
     <nameField>
         <displayFormat>PBU-{00000000}</displayFormat>
-        <label>Project Budget</label>
+        <label>Project Budget Name</label>
         <trackFeedHistory>true</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
@@ -187,14 +187,21 @@
     <visibility>Public</visibility>
     <compactLayouts>
         <fullName>Project_Budget</fullName>
-        <fields>Name</fields>
         <fields>Project__c</fields>
-        <fields>Opportunity_Product__c</fields>
-        <fields>Manual_Budget__c</fields>
-        <fields>Manual_Budget_dphr__c</fields>
-        <fields>Budget_hrs_weekday__c</fields>
+        <fields>Name</fields>
         <label>Project Budget</label>
     </compactLayouts>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Budget Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Type__c</fullName>
         <label>Type</label>
@@ -226,13 +233,8 @@
     </fields>
     <fields>
         <fullName>Budget__c</fullName>
-        <formula>CASE(
-    Type__c,
-    &quot;Manual&quot;, Manual_Budget__c,
-    &quot;Opportunity&quot;, Opportunity_Amount__c,
-    &quot;Opportunity Product&quot;, Opportunity_Product_Total_Price__c,
-    0
-)</formula>
+        <description>Used to display the Selected Budget (used for Project rollups).</description>
+        <formula>Selected_Budget__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Budget ($)</label>
         <precision>18</precision>
@@ -267,14 +269,9 @@
     </fields>
     <fields>
         <fullName>Budget_hrs__c</fullName>
+        <description>Used to display the Selected Budget (used for Project rollups).</description>
         <externalId>false</externalId>
-        <formula>CASE(
-    Type__c,
-    &quot;Manual&quot;, Manual_Budget_hrs__c,
-    &quot;Opportunity&quot;, Opportunity_Quantity_hrs__c,
-    &quot;Opportunity Product&quot;, Opportunity_Product_Quantity_hrs__c,
-    0
-)</formula>
+        <formula>Selected_Budget_hrs__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Budget (hrs)</label>
         <precision>18</precision>
@@ -308,6 +305,7 @@
     </fields>
     <fields>
         <fullName>Selected_Budget__c</fullName>
+        <description>Set via Flow to the Budget provided by Manual, Opportunity, or Opportunity Product. Used in Project Rollups. Used in Budget formula field for display purposes.</description>
         <label>Selected Budget ($)</label>
         <precision>18</precision>
         <required>false</required>
@@ -377,6 +375,7 @@
     </fields>
     <fields>
         <fullName>Selected_Budget_hrs__c</fullName>
+        <description>Set via Flow to the Budget provided by Manual, Opportunity, or Opportunity Product. Used in Project Rollups. Used in Budget formula field for display purposes.</description>
         <externalId>false</externalId>
         <label>Selected Budget (hrs)</label>
         <precision>18</precision>

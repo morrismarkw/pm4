@@ -6,7 +6,7 @@ import TIME_OBJECT from '@salesforce/schema/Time__c';
 
 export default class ProjectTimes extends LightningElement {
     @api recordId;
-    @api type = 'None';
+    @api type = 'All ';
     @track debug = 'v 2';
     @track optionsLineItem = [];
     @track timeRecords = [];
@@ -43,7 +43,7 @@ export default class ProjectTimes extends LightningElement {
 
     selectedLineItem = '';
     selectedType = 'None';
-    selectedNickname = '';
+    selectedLabel = '';
 
     connectedCallback() {
         if (this.type !== 'None') {
@@ -182,7 +182,7 @@ export default class ProjectTimes extends LightningElement {
     @wire(getRecordsForType, { objectApiName: '$objectApiName', projectId: '$recordId' })
     wiredTypeRecords({ error, data }) {
         if (data) {
-            this.optionsLineItem = [{ label: 'None', value: '' }, ...data.map(record => ({ label: record.Nickname__c, value: record.Id }))];
+            this.optionsLineItem = [{ label: 'None', value: '' }, ...data.map(record => ({ label: record.Label__c, value: record.Id }))];
         } else if (error) {
             this.optionsLineItem = [{ label: 'None', value: '' }];
         }
@@ -202,7 +202,7 @@ export default class ProjectTimes extends LightningElement {
 
     handleLineItemChange(event) {
         this.selectedLineItem = event.detail.value;
-        this.selectedNickname = this.optionsLineItem.find(option => option.value === this.selectedLineItem)?.label || '';
+        this.selectedLabel = this.optionsLineItem.find(option => option.value === this.selectedLineItem)?.label || '';
         this.isTimeFilterDisabled = this.selectedLineItem === '';
         this.fetchTimeRecords();
     }
@@ -322,7 +322,7 @@ export default class ProjectTimes extends LightningElement {
 
     clearLineItemSelection() {
         this.selectedLineItem = '';
-        this.selectedNickname = '';
+        this.selectedLabel = '';
         this.optionsLineItem = [{ label: 'None', value: '' }];
         this.timeRecords = [];
         this.totalHours = 0;

@@ -161,7 +161,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Project</label>
     <nameField>
-        <label>Project</label>
+        <label>Project Name</label>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Text</type>
     </nameField>
@@ -175,7 +175,6 @@
         <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
         <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
-        <massQuickActions>New_Budget</massQuickActions>
         <searchResultsAdditionalFields>Protocol__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Stage_Indicator__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Status_Indicator__c</searchResultsAdditionalFields>
@@ -198,6 +197,17 @@
         <fields>Remaining_Duration_weekdays__c</fields>
         <label>Project</label>
     </compactLayouts>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Stage__c</fullName>
         <label>Stage</label>
@@ -514,7 +524,6 @@ IF(
     1, 
     0
 )
-
 */</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Duration (weekdays)</label>

@@ -37,8 +37,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Nickname__c</fieldItem>
-                <identifier>RecordNickname_cField</identifier>
+                <fieldItem>Record.Label__c</fieldItem>
+                <identifier>RecordLabel__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

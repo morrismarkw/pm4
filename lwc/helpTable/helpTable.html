@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-box slds-theme_default slds-p-around_medium">
+        <div class="slds-m-bottom_medium">
+            <lightning-combobox 
+                label="Topic"
+                value={selectedTopic}
+                options={topicOptions}
+                placeholder="Select a Topic"
+                onchange={handleTopicChange}
+                style="width: 300px;">
+            </lightning-combobox>
+        </div>
+
+        <div class="slds-m-bottom_medium">
+            <lightning-combobox 
+                label="Term"
+                value={selectedTerm}
+                options={termOptions}
+                placeholder="Select a Term"
+                onchange={handleTermChange}
+                style="width: 300px;">
+            </lightning-combobox>
+        </div>
+
+        <template if:true={filteredHelpData.length}>
+            <div class="slds-m-bottom_medium">
+                <p>{filteredHelpData.length} records found</p>
+            </div>
+
+            <lightning-datatable 
+                key-field="id"
+                data={filteredHelpData}
+                columns={columns}
+                sorted-by={sortedBy}
+                sorted-direction={sortedDirection}
+                onsort={handleSort}
+                hide-checkbox-column="true"
+                class="slds-m-top_medium">
+            </lightning-datatable>
+        </template>
+
+        <template if:false={filteredHelpData.length}>
+            <div class="slds-m-top_medium slds-text-align_center">
+                <p>No records to display</p>
+            </div>
+        </template>
+    </div>
+</template>

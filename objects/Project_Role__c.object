@@ -162,7 +162,7 @@
     <label>Project Role</label>
     <nameField>
         <displayFormat>PRR-{00000000}</displayFormat>
-        <label>Project Role</label>
+        <label>Project Role Name</label>
         <trackFeedHistory>true</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
@@ -186,13 +186,21 @@
     <visibility>Public</visibility>
     <compactLayouts>
         <fullName>Project_Role</fullName>
-        <fields>Name</fields>
         <fields>Project__c</fields>
-        <fields>Duration_weekdays__c</fields>
-        <fields>Role__c</fields>
-        <fields>Planned_hrs_weekday__c</fields>
+        <fields>Name</fields>
         <label>Project Role</label>
     </compactLayouts>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Role__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Role Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Role__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>

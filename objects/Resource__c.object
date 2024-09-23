@@ -161,7 +161,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Resource</label>
     <nameField>
-        <label>Resource</label>
+        <label>Resource Name</label>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Text</type>
     </nameField>
@@ -191,6 +191,17 @@
         <fields>Default_Target_FTE_weekday__c</fields>
         <label>Resource Layout</label>
     </compactLayouts>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Resource Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Role__c</fullName>
         <deleteConstraint>Restrict</deleteConstraint>

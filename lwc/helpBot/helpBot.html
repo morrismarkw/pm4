@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Help">
+        <div style="padding: 1rem;">
+            <lightning-input 
+                type="search" 
+                label="Keyword Search" 
+                value={searchTerm} 
+                onchange={handleSearch}>
+            </lightning-input>
+        </div>
+        <div style="padding: 1rem;">
+            <!-- Ensure filteredHelpData exists and has items before rendering -->
+            <template if:true={filteredHelpData.length}>
+                <template for:each={filteredHelpData} for:item="item">
+                    <div key={item.term} style="border: 1px solid #d8dde6; background-color: #f4f6f9; border-radius: 0.25rem; padding: 0.5rem; margin-bottom: 0.5rem;">
+                        <strong>{item.topic} - {item.term}</strong>
+                        <p>{item.description}</p>
+                    </div>
+                </template>
+            </template>
+            <!-- Safe access noResults to avoid undefined values -->
+            <template if:true={noResults}>
+                <p>No results found for "{searchTerm}".</p>
+            </template>
+        </div>
+        <div style="padding: 1rem;">
+            <p style="font-size: 0.75rem; color: #888888; text-align: right;">Debug Info: {debug}</p>
+        </div>
+    </lightning-card>
+</template>
