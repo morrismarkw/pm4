@@ -1,4 +1,4 @@
-trigger ProjectRoleTrigger on Project_Role__c (after insert, after delete) {
+trigger ProjectRoleTrigger on Project_Role__c (after insert, before delete) {
     if (Trigger.isInsert) {
         for (Project_Role__c role : Trigger.new) {
             TimeHelper.createTimeRole(role);

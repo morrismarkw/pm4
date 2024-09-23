@@ -32,7 +32,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Opportunity__c</fieldItem>
                 <identifier>RecordOpportunity__cField</identifier>
@@ -49,7 +49,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Opportunity_Product__c</fieldItem>
                 <identifier>RecordOpportunity_Product_cField2</identifier>
@@ -184,6 +184,12 @@
             </fieldInstance>
         </itemInstances>
         <itemInstances>
+            <componentInstance>
+                <componentName>flexipage:blankSpace</componentName>
+                <identifier>flexipage_blankSpace3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
@@ -231,6 +237,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Budget_hrs__c</fieldItem>
                 <identifier>RecordBudget_hrs_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Budget_hrs_weekday__c</fieldItem>
+                <identifier>RecordBudget_hrs_weekday_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -343,40 +359,26 @@
                 <identifier>force_relatedListContainer</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-cc8fac40-26d8-4bd2-8b37-e1ccd1a3a209</name>
+        <name>Facet-016da5b8-739a-4443-b339-5f1704b6ac0d</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-cc8fac40-26d8-4bd2-8b37-e1ccd1a3a209</value>
+                    <value>Facet-016da5b8-739a-4443-b339-5f1704b6ac0d</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>label</name>
+                    <name>title</name>
                     <value>System Administrator</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>name</name>
-                    <value>accordionSection1</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:accordionSection</componentName>
-                <identifier>flexipage_accordionSection</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-9dfa9be4-68e7-4df9-acbb-69408c1f6f3d</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>accordionSections</name>
-                    <value>Facet-9dfa9be4-68e7-4df9-acbb-69408c1f6f3d</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:accordion</componentName>
-                <identifier>flexipage_accordion</identifier>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!$User.Profile.Name}</leftValue>
@@ -384,6 +386,20 @@
                         <rightValue>System Administrator</rightValue>
                     </criteria>
                 </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-17bff830-7549-463f-aea0-7c42465440ed</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>Facet-17bff830-7549-463f-aea0-7c42465440ed</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

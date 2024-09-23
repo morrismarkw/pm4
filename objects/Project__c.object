@@ -180,7 +180,7 @@
         <searchResultsAdditionalFields>Status_Indicator__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Start_Date__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>End_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Utilized_hrs__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Actual_hrs__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Remaining_hrs__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
@@ -192,9 +192,8 @@
         <fields>Start_Date__c</fields>
         <fields>End_Date__c</fields>
         <fields>Budget_hrs__c</fields>
-        <fields>Utilized_hrs_rollup__c</fields>
+        <fields>Actual_hrs__c</fields>
         <fields>Remaining_hrs__c</fields>
-        <fields>Remaining_Duration_weekdays__c</fields>
         <label>Project</label>
     </compactLayouts>
     <fields>
@@ -249,12 +248,15 @@
     </fields>
     <fields>
         <fullName>Budget__c</fullName>
+        <description>Displays rollup field with no digits past decimal.</description>
+        <formula>Budget_Rollup__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Budget ($)</label>
-        <summarizedField>Project_Budget__c.Selected_Budget__c</summarizedField>
-        <summaryForeignKey>Project_Budget__c.Project__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Summary</type>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
@@ -333,7 +335,7 @@
     </fields>
     <fields>
         <fullName>Budget_hr__c</fullName>
-        <formula>IF(Budget_hrs__c != 0, Budget__c / Budget_hrs__c , 0)</formula>
+        <formula>IF(Budget_hrs__c != 0, Budget_Rollup__c / Budget_hrs__c , 0)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Budget ($/hr)</label>
         <precision>18</precision>
@@ -344,7 +346,7 @@
     </fields>
     <fields>
         <fullName>Remaining__c</fullName>
-        <formula>Budget__c -  Utilized__c</formula>
+        <formula>Budget_Rollup__c -  Actual__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Remaining ($)</label>
         <precision>18</precision>
@@ -430,7 +432,7 @@ Status_Indicator__c &amp; &quot;&quot;</formula>
     <fields>
         <fullName>Remaining_hrs__c</fullName>
         <externalId>false</externalId>
-        <formula>Budget_hrs__c - Utilized_hrs_rollup__c</formula>
+        <formula>Budget_hrs__c - Actual_hrs_rollup__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Remaining (hrs)</label>
         <precision>18</precision>
@@ -578,7 +580,7 @@ IF(
     </fields>
     <fields>
         <fullName>Effective_Rate_phr__c</fullName>
-        <formula>IF (Utilized_hrs_rollup__c != 0, Budget__c /  Utilized_hrs_rollup__c, 0)</formula>
+        <formula>IF (Actual_hrs_rollup__c != 0, Budget_Rollup__c /  Actual_hrs_rollup__c, 0)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Effective Rate ($/hr)</label>
         <precision>18</precision>
@@ -720,7 +722,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
@@ -733,7 +735,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -751,7 +753,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -769,7 +771,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -787,7 +789,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -805,7 +807,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -823,7 +825,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -846,7 +848,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -869,7 +871,7 @@ IF(
         <columns>Status_Indicator__c</columns>
         <columns>Start_Date__c</columns>
         <columns>End_Date__c</columns>
-        <columns>Utilized_hrs__c</columns>
+        <columns>Actual_hrs__c</columns>
         <columns>Remaining_hrs__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
@@ -926,7 +928,7 @@ IF(
         <errorConditionFormula>!Bypass_Validation__c &amp;&amp; (
      ISCHANGED(Stage__c) &amp;&amp; 
      ISPICKVAL(Stage__c,&quot;In Progress&quot;) &amp;&amp;
-     Budget__c &lt;= 0
+     Budget_Rollup__c &lt;= 0
 )</errorConditionFormula>
         <errorMessage>Budget must be allocated to the Project before it can be moved to In Progress.</errorMessage>
     </validationRules>

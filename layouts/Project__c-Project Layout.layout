@@ -42,7 +42,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Utilized_hrs_rollup__c</field>
+                <field>Actual_hrs_rollup__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Budget_of_Lines__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Budget__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

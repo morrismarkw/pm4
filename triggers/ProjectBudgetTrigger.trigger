@@ -1,4 +1,4 @@
-trigger ProjectBudgetTrigger on Project_Budget__c (after insert, after update, after delete) {
+trigger ProjectBudgetTrigger on Project_Budget__c (after insert, after update, before delete) {
     if (Trigger.isInsert) {
         for (Project_Budget__c budget : Trigger.new) {
             TimeHelper.createTimeBudget(budget);
@@ -11,7 +11,7 @@ trigger ProjectBudgetTrigger on Project_Budget__c (after insert, after update, a
                 TimeHelper.updateTimeBudget(budget);
             }
         }
-    } else if (Trigger.isDelete) {
+    } else if (Trigger.isBefore && Trigger.isDelete) {
         for (Project_Budget__c budget : Trigger.old) {
             TimeHelper.deleteTimesForProjectBudget(budget);
         }

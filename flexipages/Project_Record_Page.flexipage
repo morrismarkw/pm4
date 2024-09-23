@@ -73,36 +73,6 @@
                 <identifier>RecordProtocol_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Planned_Tasks_hrs__c</fieldItem>
-                <identifier>RecordPlanned_Tasks_hrs__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Planned_Tasks_hrs_weekday__c</fieldItem>
-                <identifier>RecordPlanned_Tasks_hrs_weekday__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Label__c</fieldItem>
-                <identifier>RecordLabel__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-bed6803f-ec8c-46af-b188-5d1d62c79098</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -315,7 +285,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Utilized_hrs__c</fieldItem>
+                <fieldItem>Record.Actual_hrs__c</fieldItem>
                 <identifier>RecordUtilized_hrs_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -337,10 +307,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Budget__c</fieldItem>
-                <identifier>RecordBudget_cField2</identifier>
+                <identifier>RecordBudget_cField3</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -349,7 +319,7 @@
                     <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Utilized__c</fieldItem>
+                <fieldItem>Record.Actual__c</fieldItem>
                 <identifier>RecordUtilized_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -398,48 +368,6 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-ac831d63-8de1-4c5e-9ac4-ac4feb42f9be</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Bypass_Validation__c</fieldItem>
-                <identifier>RecordBypass_Validation_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <name>Facet-3c195e8e-21ea-4d09-bdec-f214f327f4a4</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <name>Facet-c9e32aba-aa65-4a22-a90d-433c01a8949f</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-3c195e8e-21ea-4d09-bdec-f214f327f4a4</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column17</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-c9e32aba-aa65-4a22-a90d-433c01a8949f</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:column</componentName>
-                <identifier>flexipage_column18</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-69abd1b8-0e9a-4a29-840d-d43caaf767c1</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -533,35 +461,10 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Utilization and Budget Tracking</value>
+                    <value>Actual and Budget Tracking</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection7</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-69abd1b8-0e9a-4a29-840d-d43caaf767c1</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>horizontalAlignment</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Admin Only</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection9</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>System Administrator</rightValue>
-                    </criteria>
-                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-023f0a2b-03f8-4055-8811-6d9acd277260</name>
@@ -624,7 +527,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Budget__c</fieldItem>
+                <fieldItem>Record.Budget_Rollup__c</fieldItem>
                 <identifier>RecordBudget_cField</identifier>
             </fieldInstance>
         </itemInstances>
@@ -664,6 +567,13 @@
                 </componentInstanceProperties>
                 <componentName>projectTimesModal</componentName>
                 <identifier>c_projectTimesModal2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Budget_of_Lines__c}</leftValue>
+                        <operator>GT</operator>
+                        <rightValue>0</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -692,7 +602,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Totals</value>
+                    <value>Budget Totals</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
@@ -869,7 +779,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Totals</value>
+                    <value>Role Totals</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection2</identifier>
@@ -1049,7 +959,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Totals</value>
+                    <value>Resource Totals</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection3</identifier>
@@ -1226,7 +1136,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Totals</value>
+                    <value>Task Totals</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection8</identifier>
@@ -1521,6 +1431,106 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Bypass_Validation__c</fieldItem>
+                <identifier>RecordBypass_Validation_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-3c195e8e-21ea-4d09-bdec-f214f327f4a4</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>Facet-c9e32aba-aa65-4a22-a90d-433c01a8949f</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-3c195e8e-21ea-4d09-bdec-f214f327f4a4</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column17</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-c9e32aba-aa65-4a22-a90d-433c01a8949f</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column18</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-69abd1b8-0e9a-4a29-840d-d43caaf767c1</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-69abd1b8-0e9a-4a29-840d-d43caaf767c1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Admin Only</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection9</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-db19be14-2998-4e91-9cd4-314e99b0ea5b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>active</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-db19be14-2998-4e91-9cd4-314e99b0ea5b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>System Administrator</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab9</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-894e479d-8d55-45f2-9a25-ba3f4bdde509</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
@@ -1528,6 +1538,16 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>Facet-894e479d-8d55-45f2-9a25-ba3f4bdde509</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>
@@ -1607,7 +1627,7 @@
                 <identifier>flexipage_reportChart2</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.Budget__c}</leftValue>
+                        <leftValue>{!Record.Budget_Rollup__c}</leftValue>
                         <operator>NE</operator>
                         <rightValue>0</rightValue>
                     </criteria>

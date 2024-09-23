@@ -29,6 +29,7 @@
     <tabs>Project__c</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-report</tabs>
+    <tabs>Time__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Project_Management_UtilityBar</utilityBar>
 </CustomApplication>
