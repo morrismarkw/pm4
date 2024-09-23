@@ -9,75 +9,14 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p&gt;Project Management Home Page&lt;/p&gt;</value>
+                    <value>&lt;h1&gt;Welcome to Project Management&lt;/h1&gt;&lt;p&gt;This application is intended to help you manage your projects more efficiently and keep everything running smoothly. To get started, please review the following information where you&apos;ll find an overview of the key components and data related to managing your projects. By tracking resource availability, roles, budgets, and tasks, you’ll have everything you need to keep your projects on course. The insights provided will help you allocate resources effectively, monitor progress, and ensure that your projects stay on track.&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText</identifier>
+                <identifier>flexipage_richText6</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
         <name>region1</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;Reports and Dashboards placeholder.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;Reports and Dashboards placeholder.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;Reports and Dashboards placeholder.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText4</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;Reports and Dashboards placeholder.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText5</identifier>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -106,6 +45,9 @@
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>reportName</name>
                     <value>Budget_vs_Planned_Resources_wR6</value>
                 </componentInstanceProperties>
@@ -117,72 +59,15 @@
                 <identifier>flexipage_reportChart</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-6162f4e4-252b-4473-98f7-2ce7e34b1ccc</name>
-        <type>Facet</type>
+        <mode>Replace</mode>
+        <name>region2</name>
+        <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;h1&gt;&lt;img src=&quot;https://gmailcompm-dev-ed.develop.file.force.com/servlet/rtaImage?refid=0EMak000000AyFp&quot;&gt;&lt;/h1&gt;&lt;h1&gt;Welcome to Project Management&lt;/h1&gt;&lt;p&gt;This application is intended to help you manage your projects more efficiently and keep everything running smoothly. To get started, please review the following information where you&apos;ll find an overview of the key components and data related to managing your projects. By tracking resource availability, roles, budgets, and tasks, you’ll have everything you need to keep your projects on course. The insights provided will help you allocate resources effectively, monitor progress, and ensure that your projects stay on track.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;Project Data Overview&lt;/h2&gt;&lt;p&gt;This diagram shows the essential components of your project management workspace:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Resource&lt;/strong&gt;: The people assigned to roles within projects.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Available &amp;amp; Target Hours&lt;/strong&gt;: Tracks the availability and target utilization of each resource.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Project Structure&lt;/strong&gt;: Includes the budget, planned hours, and actual hours spent on tasks for each role.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Opportunity Lines&lt;/strong&gt;: Links project planning with sales opportunities to help define budgets and allocate resources efficiently.&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;https://gmailcompm-dev-ed.develop.file.force.com/servlet/rtaImage?refid=0EMak000000AyAz&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;Understanding Your Reports&lt;/h2&gt;&lt;p&gt;Here’s an overview of the data you can track and analyze:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Direct Data&lt;/strong&gt;: Information like available hours, target hours, project budgets, and actual hours worked.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Key Metrics&lt;/strong&gt;: Calculated insights such as utilization rates, billable hours, effective FTEs, and capacity utilization, helping you monitor project progress and resource use over time.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;https://gmailcompm-dev-ed.develop.file.force.com/servlet/rtaImage?refid=0EMak000000AyED&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;Use these insights to stay on top of your projects and make informed decisions quickly.&lt;/span&gt;&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText6</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-61aa88c6-763e-4bfb-bba5-8418904e8abe</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-6162f4e4-252b-4473-98f7-2ce7e34b1ccc</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Standard.Tab.dashboard</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>active</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-61aa88c6-763e-4bfb-bba5-8418904e8abe</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Help</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-e17ab937-df39-455a-a8d5-782fb2e57361</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>Facet-e17ab937-df39-455a-a8d5-782fb2e57361</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
+                <componentName>helpTable</componentName>
+                <identifier>c_helpTable</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

@@ -9,18 +9,6 @@
                         <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Project__c.New_Budget</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Project__c.New_Role</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Project__c.New_Resource</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Global.NewTask</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -41,7 +29,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>5</value>
+                    <value>1</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
@@ -103,6 +91,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Planned_Tasks_hrs_weekday__c</fieldItem>
                 <identifier>RecordPlanned_Tasks_hrs_weekday__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Label__c</fieldItem>
+                <identifier>RecordLabel__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-bed6803f-ec8c-46af-b188-5d1d62c79098</name>
@@ -448,6 +446,16 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>type</name>
+                    <value>None</value>
+                </componentInstanceProperties>
+                <componentName>projectTimesModal</componentName>
+                <identifier>c_projectTimesModal5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>decorate</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -651,218 +659,13 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
+                    <name>type</name>
+                    <value>Budget</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;To create a new Project Budget, click the New Budget button located in the top-right corner of the page.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText10</identifier>
+                <componentName>projectTimesModal</componentName>
+                <identifier>c_projectTimesModal2</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>actionNames</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Project__c.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>Budget_Line_Items__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Nickname__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Budget__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Budget_hrs__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Budget_hrs_weekday__c</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Budgets</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-2e273c77-0799-4bdc-891e-258a23f157ca</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText9</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-e186fad4-1721-4c09-930f-85e75f059eb9</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>New</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Project__c.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>Budget_Line_Items__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>NAME</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Nickname__c</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Admin Only</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList5</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>System Administrator</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-311fef39-4944-4a7f-9aff-4e88df06de58</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>active</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-2e273c77-0799-4bdc-891e-258a23f157ca</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Line Items</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab10</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-e186fad4-1721-4c09-930f-85e75f059eb9</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Daily Breakdown</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab11</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-311fef39-4944-4a7f-9aff-4e88df06de58</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Debug</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab15</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!$User.Profile.Name}</leftValue>
-                        <operator>EQUAL</operator>
-                        <rightValue>System Administrator</rightValue>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-b13012ae-472a-4cdc-9e56-3ff7c39ac607</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -898,21 +701,64 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>Facet-b13012ae-472a-4cdc-9e56-3ff7c39ac607</value>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
-                    <name>type</name>
-                    <value>Budget</value>
+                    <name>maxRecordsToDisplay</name>
+                    <value>10</value>
                 </componentInstanceProperties>
-                <componentName>projectTimes</componentName>
-                <identifier>c_projectTimes</identifier>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Project__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Budget_Line_Items__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Budget__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Budget_hrs__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Budget_hrs_weekday__c</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Budgets</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>__DEFAULT__</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Default</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-d7526cf3-02c3-465d-b629-eb4149bba3d6</name>
@@ -990,93 +836,45 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>type</name>
+                    <value>Role</value>
+                </componentInstanceProperties>
+                <componentName>projectTimesModal</componentName>
+                <identifier>c_projectTimesModal</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>decorate</name>
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;span style=&quot;color: rgb(24, 24, 24);&quot;&gt;To create a new Project Role, click the New Budget button located in the top-right corner of the page.&lt;/span&gt;&lt;/p&gt;</value>
+                    <value>&lt;p&gt;The Project Roles helps you define and manage roles within a project, specifying planned labor for each role. By default, the planned hours are spread uniformly across the project’s timeline, but you can make manual adjustments as needed, making it easier to manage and compare your planned labor hours against both the project budget and actual time spent.&lt;/p&gt;</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText11</identifier>
+                <identifier>flexipage_richText4</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>actionNames</name>
+                    <name>columns</name>
+                    <value>Facet-33f0c64c-ddba-496e-a363-b80b72d27991</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>adminFilters</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Project__c.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>Project_Roles__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Role__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Planned_hrs__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Planned_hrs_weekday__c</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Project Roles</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
+                    <name>horizontalAlignment</name>
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
+                    <name>label</name>
+                    <value>Totals</value>
                 </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList6</identifier>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-6ccfae78-c753-4cb9-8f5d-874e236b0456</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>type</name>
-                    <value>Role</value>
-                </componentInstanceProperties>
-                <componentName>projectTimes</componentName>
-                <identifier>c_projectTimes3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-0432b133-0e0e-43ff-8fa3-888839f14a3c</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -1113,7 +911,13 @@
                             <value>NAME</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Nickname__c</value>
+                            <value>Role__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Planned_hrs__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Planned_hrs_weekday__c</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -1134,103 +938,7 @@
                     <value>Default</value>
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList4</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-e148e274-6e09-4208-9bf7-87fb1196eb17</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>active</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-6ccfae78-c753-4cb9-8f5d-874e236b0456</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Line Items</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab12</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-0432b133-0e0e-43ff-8fa3-888839f14a3c</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Daily Breakdown</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab13</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-e148e274-6e09-4208-9bf7-87fb1196eb17</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Debug</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab16</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-d116b2f2-405e-4951-935e-9fea1a031460</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;The Project Roles helps you define and manage roles within a project, specifying planned labor for each role. By default, the planned hours are spread uniformly across the project’s timeline, but you can make manual adjustments as needed, making it easier to manage and compare your planned labor hours against both the project budget and actual time spent.&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText4</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>columns</name>
-                    <value>Facet-33f0c64c-ddba-496e-a363-b80b72d27991</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>horizontalAlignment</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Totals</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:fieldSection</componentName>
-                <identifier>flexipage_fieldSection2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>Facet-d116b2f2-405e-4951-935e-9fea1a031460</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset3</identifier>
+                <identifier>lst_dynamicRelatedList6</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-ed193365-49dd-42b0-adc6-ed43c1939684</name>
@@ -1308,6 +1016,16 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>type</name>
+                    <value>Resource</value>
+                </componentInstanceProperties>
+                <componentName>projectTimesModal</componentName>
+                <identifier>c_projectTimesModal3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>decorate</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -1340,21 +1058,12 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;span style=&quot;color: rgb(24, 24, 24);&quot;&gt;To create a new Project Resource, click the New Budget button located in the top-right corner of the page.&lt;/span&gt;&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText12</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>adminFilters</name>
@@ -1380,12 +1089,6 @@
                     <valueList>
                         <valueListItems>
                             <value>NAME</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Resource__c</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Role__c</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Planned_hrs__c</value>
@@ -1490,6 +1193,16 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>type</name>
+                    <value>Task</value>
+                </componentInstanceProperties>
+                <componentName>projectTimesModal</componentName>
+                <identifier>c_projectTimesModal4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
                     <name>decorate</name>
                     <value>true</value>
                 </componentInstanceProperties>
@@ -1522,21 +1235,12 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;span style=&quot;color: rgb(24, 24, 24);&quot;&gt;To create a new Project Task, click the New Budget button located in the top-right corner of the page.&lt;/span&gt;&lt;/p&gt;</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText13</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>adminFilters</name>
@@ -1592,20 +1296,6 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-d5fa199b-2c88-455a-b02d-44b7a0d33aa4</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>type</name>
-                    <value>None</value>
-                </componentInstanceProperties>
-                <componentName>projectTimes</componentName>
-                <identifier>c_projectTimes2</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-b336174e-f4f1-4e7f-8eee-d3582c6b36b7</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -1670,18 +1360,22 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>decorate</name>
-                    <value>true</value>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>richTextValue</name>
-                    <value>&lt;p&gt;&lt;img src=&quot;https://gmailcompm-dev-ed.develop.file.force.com/servlet/rtaImage?refid=0EMak000000ArUT&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The Project helps you track and manage the overall scope, budget, and time allocation for a project. It consolidates key metrics such as total budget, planned and utilized hours, and resource allocation. By capturing detailed information on project duration, effective rates, and status, the Project provides a comprehensive view of progress. This makes it easier to monitor resource utilization, compare planned versus actual hours, and adjust timelines and resources as needed to keep the project on track.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Account&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The client or organization associated with this project.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Budget ($)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total allocated budget for the project, rolled up from the associated Project Budget records. Hours are based based on dollar amounts and average rates from Opportunity Product Line Items. Budget must be allocated to the project before it can be moved to the &apos;In Progress&apos; stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Budget ($/hr)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;The average rate for the project, rolled up from the associated Project Budget records.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Budget (FTE/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The full-time equivalent resource allocation per weekday.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Budget (hrs)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total blended hours for the project, rolled up from the Project Budget and distributed across the timeline.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Budget (hrs/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The average number of hours allocated per weekday, based on the total blended hours for the project.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Duration (weekdays)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total number of weekdays in the project timeline.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Effective Rate ($/hr)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The effective hourly rate calculated from the billable hours.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;End Date&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The scheduled end date for the project, marking the planned completion point. End Date cannot be changed once the Stage is set to &apos;Completed&apos; or &apos;Canceled.&apos; Before moving the Stage to &apos;Completed&apos; or &apos;Canceled,&apos; the End Date must be set to today.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Resources (FTE/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The planned FTE resource allocation per weekday, providing insight into how resources are distributed during the project.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Resources (hrs)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total planned hours for all resources, calculated to ensure proper resource management.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Resources (hrs/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The average number of planned hours per weekday for all resources.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Roles (FTE/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The average planned FTE allocation per weekday for all roles, offering a clearer view of resource management.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Roles (hrs)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total number of planned hours for all roles in the project.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Planned Roles (hrs/weekday)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The average number of planned hours per weekday for all roles.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Project&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The name or title of the project.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Protocol&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A unique identifier for the project, typically reflecting naming conventions or client-specific requirements.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Remaining ($)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The remaining budget for the project, calculated by subtracting the utilized budget from the total budget.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Remaining (hrs)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The remaining hours available for the project, based on planned hours and actual utilization.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Remaining Duration (weekdays)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The remaining number of weekdays until the project is completed.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Stage&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The current phase of the project (e.g., Planning, In Progress, Completed). The Stage must always move forward; it cannot revert to a previous stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Stage Number&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;A numerical representation of the current stage, useful for reporting and automation purposes.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Start Date&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The planned start date of the project, marking the official kickoff. Start Date cannot be set to the past and cannot be changed once the Stage is moved to &apos;In Progress.&apos; Before moving the Stage to &apos;In Progress,&apos; the Start Date must be set to today.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The project’s current status, reflecting its overall health and activity level (e.g., Active, On Hold).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Utilized ($)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total amount of the budget that has been spent or utilized to date.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Utilized (hrs)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;The total hours that have been used so far in the project, allowing comparison against planned hours.&lt;/p&gt;</value>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
                 </componentInstanceProperties>
-                <componentName>flexipage:richText</componentName>
-                <identifier>flexipage_richText8</identifier>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListContainer</componentName>
+                <identifier>force_relatedListContainer</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-512fe075-e2e7-4937-9546-612ab0455ae9</name>
+        <name>Facet-c86d20ab-1c6e-41b9-8601-77adc11d517a</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -1763,20 +1457,6 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-b336174e-f4f1-4e7f-8eee-d3582c6b36b7</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Times</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab14</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
                     <value>Facet-74668196-245f-46d8-a3b7-6a65259412d2</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -1819,14 +1499,21 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-512fe075-e2e7-4937-9546-612ab0455ae9</value>
+                    <value>Facet-c86d20ab-1c6e-41b9-8601-77adc11d517a</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Help</value>
+                    <value>System Administrator</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab9</identifier>
+                <identifier>flexipage_tab17</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <name>Facet-6817be9e-6df5-46af-8a62-a638e63d706c</name>

@@ -51,6 +51,12 @@
                 <identifier>RecordRole_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Label__c</fieldItem>
+                <identifier>RecordLabel__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-01b261ab-688f-4edc-a050-0778176e7d4f</name>
         <type>Facet</type>
     </flexiPageRegions>

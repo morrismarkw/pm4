@@ -162,7 +162,7 @@
     <label>Project Resource</label>
     <nameField>
         <displayFormat>PRS-{00000000}</displayFormat>
-        <label>Project Resource</label>
+        <label>Project Resource Name</label>
         <trackFeedHistory>true</trackFeedHistory>
         <type>AutoNumber</type>
     </nameField>
@@ -187,14 +187,20 @@
     <visibility>Public</visibility>
     <compactLayouts>
         <fullName>Project_Resource_Assignment</fullName>
-        <fields>Name</fields>
         <fields>Project__c</fields>
-        <fields>Duration_weekdays__c</fields>
-        <fields>Resource__c</fields>
-        <fields>Planned_hrs__c</fields>
-        <fields>Planned_hrs_weekday__c</fields>
         <label>Project Resource Assignment</label>
     </compactLayouts>
+    <fields>
+        <fullName>Label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Resource Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>Role__c</fullName>
         <externalId>false</externalId>

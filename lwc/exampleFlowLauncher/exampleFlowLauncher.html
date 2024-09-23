@@ -1,0 +1,8 @@
+<template>
+    <div style="display: flex; justify-content: flex-end;">
+        <lightning-button label="Launch Flow" onclick={handleLaunchFlow}></lightning-button>
+    </div>
+    <template if:true={isFlowVisible}>
+        <c-flow-modal flow-api-name={flowApiName} record-id={recordId} onclose={handleFlowClose}></c-flow-modal>
+    </template>
+</template>

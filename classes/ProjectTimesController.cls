@@ -2,7 +2,7 @@ public with sharing class ProjectTimesController {
 
     @AuraEnabled(cacheable=true)
     public static List<SObject> getRecordsForType(String objectApiName, Id projectId) {
-        String query = 'SELECT Id, Nickname__c FROM ' + objectApiName + ' WHERE Project__c = :projectId';
+        String query = 'SELECT Id, Label__c FROM ' + objectApiName + ' WHERE Project__c = :projectId';
         return Database.query(query);
     }
 
